@@ -24,7 +24,7 @@ class ScribeTddServiceProvider extends ServiceProvider
         }
 
         if (
-            $this->app->environment('testing') &&
+            in_array($this->app->environment(), config('scribe-tdd.environments', ['testing'])) &&
             $this->app->runningInConsole() &&
             config('scribe-tdd.enabled')
         ) {

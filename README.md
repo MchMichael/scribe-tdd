@@ -78,6 +78,11 @@ abstract class TestCase extends BaseTestCase
 ```
 It is up to you if you want to disable existing default strategies or just add these strategies so you can enjoy both worlds.
 
+### Step 4 (optional): Publish the scribe-tdd config
+```
+php artisan vendor:publish --provider="AjCastro\ScribeTdd\ScribeTddServiceProvider"
+```
+
 ## Usage
 
 ### Step 1: Create and run tests
